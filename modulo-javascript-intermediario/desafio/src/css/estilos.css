@@ -1,0 +1,164 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(../imagens/bg-repeat.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.duvidas {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 300px;
+    height: 111px;
+}
+
+.duvidas .fonte-grande {
+    width: 287px;
+    height: 46px;
+    margin-bottom: 10px;
+}
+
+.duvidas .fonte-grande h1 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.duvidas .fonte-grande p {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.duvidas .fonte-pequena {
+    width: 300px;
+    height: 54px;
+}
+
+.duvidas .fonte-pequena p {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.formulario {
+    display: flex;
+    background-color: #fff;
+    width: 340px;
+    height: 378px;
+    margin-top: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.preenchimento-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.preenchimento-form p {
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.preenchimento-form input{
+    width: 298px;
+    padding: 10px;
+}
+
+.preenchimento-form textarea{
+    width: 298px;
+    padding: 10px;
+}
+
+.bordas {
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#nome, #email, #telefone {
+    height: 35px;
+}
+
+#mensagem {
+    height: 100px;
+}
+
+.formulario .preenchimento-form .margem-certa {
+    margin: -10px 0px 10px 10px;
+}
+
+.formulario .preenchimento-form .margem-no-erro {
+    margin: 0px 0px 10px 10px;
+}
+
+.form-certo {
+    display: none;
+}
+
+span {
+    display: none;
+}
+
+.msg-erro-nome, .msg-erro-email, .msg-erro-tel, .msg-erro-mensagem {
+    display: block;
+    color: red;
+}
+
+.msg-erro-nome {
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    height: 9px;
+    font-size: 9px;
+}
+
+.msg-erro-email {
+    position: absolute;
+    top: 85px;
+    left: 25px;
+    height: 9px;
+    font-size: 9px;
+}
+
+.msg-erro-tel {
+    position: absolute;
+    top: 135px;
+    left: 25px;
+    height: 9px;
+    font-size: 9px;
+}
+
+.msg-erro-mensagem {
+    position: absolute;
+    top: 250px;
+    left: 25px;
+    height: 9px;
+    font-size: 9px;
+}
+
+button {
+    width: 298px;
+    height: 41px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3CCC87;
+    color: #fff;
+}
+
+.erro-formulario {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.acerto-formulario {
+    border: 2px solid green;
+    border-radius: 5px;
+}

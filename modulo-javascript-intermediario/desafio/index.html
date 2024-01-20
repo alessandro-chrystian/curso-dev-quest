@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Formulário</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+</head>
+
+<body>
+    <main>
+        <section class="duvidas">
+            <div class="duvidas fonte-grande">
+                <h1>FICOU COM DÚVIDA?</h1>
+                <p>NOS MANDE UMA MENSAGEM!</p>
+            </div>
+            <div class="duvidas fonte-pequena">
+                <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+            </div>
+        </section>
+        <section class="formulario">
+            <form class="formulario preenchimento-form" action="#">
+            <input type="text" placeholder="Nome completo *" id="nome" class="bordas">
+            <span>Campo Obrigatório</span>
+            <input type="email" name="email" id="email" placeholder="Email *" class="bordas">
+            <span>Campo Obrigatório</span>
+            <input type="tel" name="telefone" id="telefone" placeholder="Telefone *" class="bordas">
+            <span>Campo Obrigatório</span>
+            <textarea name="mensagem" id="mensagem" cols="38" rows="10" placeholder="Mensagem *" class="bordas"></textarea>
+            <span>Campo Obrigatório</span>
+            <p id="p-obrigatorio" class="margem-certa">*campos obrigatórios</p>
+            <button type="submit" class="validador-formulario" class="bordas">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="src/js/form.js"></script>
+</body>
+
+</html>
